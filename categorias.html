@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PHNews - Seu portal de notícias completo com cobertura em Política, Economia, Tecnologia, Esportes e mais.">
+    <title>PHNews - Portal de Notícias Profissional</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Top Bar com data e botão de Modo Escuro -->
+    <div class="top-bar">
+        <div class="container">
+            <span class="date-info" id="currentDate">Domingo, 05 de Outubro de 2026</span>
+            <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Alternar modo escuro">
+                <span id="themeIcon">🌙</span>
+                <span id="themeText">Modo Escuro</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Cabeçalho Principal -->
+    <header class="main-header">
+        <div class="container logo-container">
+            <a href="index.html" class="logo-link">
+                <div class="logo-container">
+                    <img src="img/logo-phnews.png" alt="Símbolo do PHNews" class="logo-img">
+                </div>
+            </a>
+        </div>
+        <p class="tagline">Informação com Credibilidade, Agilidade e Profissionalismo</p>
+    </header>
+
+    <!-- Barra de Navegação Responsiva -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menu de navegação" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link ">Início</a></li>
+                <li class="nav-item"><a href="categorias.html" class="nav-link active">Todas as Categorias</a></li>
+                <li class="nav-item"><a href="politica.html" class="nav-link ">Política</a></li>
+                <li class="nav-item"><a href="economia.html" class="nav-link ">Economia</a></li>
+                <li class="nav-item"><a href="tecnologia.html" class="nav-link ">Tecnologia</a></li>
+                <li class="nav-item"><a href="esportes.html" class="nav-link ">Esportes</a></li>
+                <li class="nav-item"><a href="entretenimento.html" class="nav-link ">Entretenimento</a></li>
+                <li class="nav-item"><a href="saude.html" class="nav-link ">Saúde</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link ">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section style="margin: 30px 0;">
+            <div class="section-header">
+                <h1 class="section-title">Central de Categorias de Notícias</h1>
+            </div>
+            <p style="margin-bottom: 20px; color: var(--text-secondary);">
+                Explore o conteúdo do PHNews dividido rigorosamente em <strong>10 categorias individuais</strong>. Utilize o filtro interativo abaixo para navegar instantaneamente entre os tópicos.
+            </p>
+
+            <!-- Barra de Filtros por Categoria em JavaScript -->
+            <div class="category-filter-bar">
+                <button class="filter-btn active" data-category="todas">Todas as categorias</button>
+            </div>
+            <div class="category-filter-groups">
+                <section class="category-filter-group">
+                    <h2>Brasil e economia</h2>
+                    <div class="category-filter-bar">
+                        <button class="filter-btn" data-category="politica" data-category-name="Política">Política</button>
+                        <button class="filter-btn" data-category="economia" data-category-name="Economia">Economia</button>
+                        <button class="filter-btn" data-category="mundo" data-category-name="Mundo">Mundo</button>
+                    </div>
+                </section>
+                <section class="category-filter-group">
+                    <h2>Sociedade e conhecimento</h2>
+                    <div class="category-filter-bar">
+                        <button class="filter-btn" data-category="ciencia" data-category-name="Ciência">Ciência</button>
+                        <button class="filter-btn" data-category="educacao" data-category-name="Educação">Educação</button>
+                        <button class="filter-btn" data-category="saude" data-category-name="Saúde">Saúde</button>
+                        <button class="filter-btn" data-category="tecnologia" data-category-name="Tecnologia">Tecnologia</button>
+                    </div>
+                </section>
+                <section class="category-filter-group">
+                    <h2>Cultura e esportes</h2>
+                    <div class="category-filter-bar">
+                        <button class="filter-btn" data-category="cultura" data-category-name="Cultura">Cultura</button>
+                        <button class="filter-btn" data-category="esportes" data-category-name="Esportes">Esportes</button>
+                        <button class="filter-btn" data-category="entretenimento" data-category-name="Entretenimento">Entretenimento</button>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Grid com Notícias de Cada uma das 10 Categorias -->
+            <div class="news-grid">
+                <!-- 1. Política -->
+                <article class="news-card" data-category="politica">
+                    <div class="card-img-wrapper">
+                        <img src="img/news-politica.svg" alt="Política">
+                        <span class="category-tag">1. Política</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">05/10/2026 • Editoria de Política</div>
+                        <h3 class="card-title"><a href="politica.html">Debate sobre a Reforma Tributária Digital Entra em Fase Final</a></h3>
+                        <p class="card-excerpt">Comissão parlamentar apresenta relatório simplificado para incentivo ao empreendedorismo tecnológico.</p>
+                        <a href="politica.html" class="read-more">Página de Política &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- 2. Economia -->
+                <article class="news-card" data-category="economia">
+                    <div class="card-img-wrapper">
+                        <img src="img/news-economia.svg" alt="Economia">
+                        <span class="category-tag">2. Economia</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">05/10/2026 • Editoria de Economia</div>
+                        <h3 class="card-title"><a href="economia.html">Exportações do Setor Agrícola Batem Recorde Histórico</a></h3>
+                        <p class="card-excerpt">Adoção de tecnologias de monitoramento via satélite impulsiona a produtividade no campo.</p>
+                        <a href="economia.html" class="read-more">Página de Economia &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- 3. Tecnologia -->
+                <article class="news-card" data-category="tecnologia">
+                    <div class="card-img-wrapper">
+                        <img src="img/news-tecnologia.svg" alt="Tecnologia">
+                        <span class="category-tag">3. Tecnologia</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">05/10/2026 • Editoria de Tecnologia</div>
+                        <h3 class="card-title"><a href="tecnologia.html">Avanço em Redes 6G Promete Latência Abaixo de 1 Milissegundo</a></h3>
+                        <p class="card-excerpt">Primeiros testes práticos demonstram viabilidade de cirurgias remotas com estabilidade total.</p>
+                        <a href="tecnologia.html" class="read-more">Página de Tecnologia &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- 4. Esportes -->
+                <article class="news-card" data-category="esportes">
+                    <div class="card-img-wrapper">
+                        <img src="img/news-esportes.svg" alt="Esportes">
+                        <span class="category-tag">4. Esportes</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">05/10/2026 • Editoria de Esportes</div>
+                        <h3 class="card-title"><a href="esportes.html">Maratona Internacional Reúne Mais de 30 Mil Corredores</a></h3>
+                        <p class="card-excerpt">Atletas de 40 países participam da prova que movimentou a capital com recorde de público.</p>
+                        <a href="esportes.html" class="read-more">Página de Esportes &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- 5. Entretenimento -->
+                <article class="news-card" data-category="entretenimento">
+                    <div class="card-img-wrapper">
+                        <img src="img/news-entretenimento.svg" alt="Entretenimento">
+                        <span class="category-tag">5. Entretenimento</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">05/10/2026 • Editoria de Entretenimento</div>
+                        <h3 class="card-title"><a href="entretenimento.html">Nova Série de Ficção Científica Conquista Audiência Recorde</a></h3>
+                        <p class="card-excerpt">Superprodução gravada no Brasil destaca efeitos visuais de última geração e roteiro envolvente.</p>
+                        <a href="entretenimento.html" class="read-more">Página de Entretenimento &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- 6. Saúde -->
+                <article class="news-card" data-category="saude">
+                    <div class="card-img-wrapper">
+                        <img src="img/news-saude.svg" alt="Saúde">
+                        <span class="category-tag">6. Saúde</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">05/10/2026 • Editoria de Saúde</div>
+                        <h3 class="card-title"><a href="saude.html">Estudo Revela Benefícios do Exercício Físico na Longevidade Cognitiva</a></h3>
+                        <p class="card-excerpt">Hábitos saudáveis diários reduzem em 40% os riscos de doenças neurodegenerativas na terceira idade.</p>
+                        <a href="saude.html" class="read-more">Página de Saúde &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- 7. Ciência -->
+                <article class="news-card" data-category="ciencia">
+                    <div class="card-img-wrapper">
+                        <img src="img/news-ciencia.svg" alt="Ciência">
+                        <span class="category-tag">7. Ciência</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">05/10/2026 • Editoria de Ciência</div>
+                        <h3 class="card-title"><a href="ciencia.html">Telescópio Espacial Descobre Novo Exoplaneta com Água Líquida</a></h3>
+                        <p class="card-excerpt">Astrofísicos confirmam atmosfera semelhante à da Terra em planeta a 120 anos-luz de distância.</p>
+                        <a href="ciencia.html" class="read-more">Página de Ciência &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- 8. Educação -->
+                <article class="news-card" data-category="educacao">
+                    <div class="card-img-wrapper">
+                        <img src="img/news-educacao.svg" alt="Educação">
+                        <span class="category-tag">8. Educação</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">05/10/2026 • Editoria de Educação</div>
+                        <h3 class="card-title"><a href="educacao.html">Programa de Bolsas em Programação e Robótica Abre 50 Mil Vagas</a></h3>
+                        <p class="card-excerpt">Iniciativa pública garante formação gratuita para estudantes de escolas da rede pública nacional.</p>
+                        <a href="educacao.html" class="read-more">Página de Educação &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- 9. Mundo -->
+                <article class="news-card" data-category="mundo">
+                    <div class="card-img-wrapper">
+                        <img src="img/news-mundo.svg" alt="Mundo">
+                        <span class="category-tag">9. Mundo</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">05/10/2026 • Editoria Internacional</div>
+                        <h3 class="card-title"><a href="mundo.html">Acordo de Cooperação Ambiental É Assinado na Cúpula da Europa</a></h3>
+                        <p class="card-excerpt">Bloco de nações estabelece fundo bilionário para preservação florestal e energias renováveis.</p>
+                        <a href="mundo.html" class="read-more">Página de Mundo &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- 10. Cultura -->
+                <article class="news-card" data-category="cultura">
+                    <div class="card-img-wrapper">
+                        <img src="img/news-cultura.svg" alt="Cultura">
+                        <span class="category-tag">10. Cultura</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">05/10/2026 • Editoria de Cultura</div>
+                        <h3 class="card-title"><a href="cultura.html">Museu de Arte Moderna Reabre com Exposição Imersiva Interativa</a></h3>
+                        <p class="card-excerpt">Obras clássicas ganham vida com tecnologia de realidade aumentada e projeções de alta resolução.</p>
+                        <a href="cultura.html" class="read-more">Página de Cultura &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé Principal Semântico -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Sobre o PHNews</h3>
+                    <p style="font-size: 0.9rem; line-height: 1.6;">O PHNews é um portal de notícias dedicado a trazer jornalismo independente, focado na imparcialidade e cobertura abrangente das principais categorias de notícias locais e mundiais.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>10 Categorias</h3>
+                    <ul class="footer-links">
+                        <li><a href="politica.html">1. Política</a></li>
+                        <li><a href="economia.html">2. Economia</a></li>
+                        <li><a href="tecnologia.html">3. Tecnologia</a></li>
+                        <li><a href="esportes.html">4. Esportes</a></li>
+                        <li><a href="entretenimento.html">5. Entretenimento</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Mais Categorias</h3>
+                    <ul class="footer-links">
+                        <li><a href="saude.html">6. Saúde</a></li>
+                        <li><a href="ciencia.html">7. Ciência</a></li>
+                        <li><a href="educacao.html">8. Educação</a></li>
+                        <li><a href="mundo.html">9. Mundo</a></li>
+                        <li><a href="cultura.html">10. Cultura</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento e Contato</h3>
+                    <ul class="footer-links">
+                        <li><a href="contato.html">Fale Conosco / Redação</a></li>
+                        <li><a href="contato.html">Trabalhe Conosco</a></li>
+                        <li><a href="contato.html">Anuncie no Portal</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 PHNews. Todos os direitos reservados. Projeto Web Desenvolvido com HTML, CSS e JavaScript Puro.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript Único Externo -->
+    <script src="js/news.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre ou crie sua conta de autor no PHNews.">
+    <title>Entrar ou cadastrar | PHNews</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container logo-container">
+            <a href="index.html" class="logo-link">
+                <img src="img/logo-phnews.png" alt="Símbolo do PHNews" class="logo-img">
+            </a>
+        </div>
+        <p class="tagline">Entre na redação e compartilhe suas notícias.</p>
+    </header>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <ul class="nav-menu"><li class="nav-item"><a class="nav-link" href="index.html">Voltar às notícias</a></li></ul>
+        </div>
+    </nav>
+    <main class="container account-main">
+        <section class="section-header">
+            <h1 class="section-title">Acesse o PHNews</h1>
+        </section>
+        <p id="authAlert" class="form-alert" role="alert" hidden></p>
+        <div id="authForms" class="account-grid">
+            <section class="contact-section">
+                <h2>Entrar</h2>
+                <p class="account-description">Acesse seu painel para acompanhar e escrever matérias.</p>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="loginEmail">E-mail</label>
+                        <input class="form-control" id="loginEmail" name="email" type="email" autocomplete="email" maxlength="254" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Senha</label>
+                        <input class="form-control" id="loginPassword" name="password" type="password" autocomplete="current-password" maxlength="128" required>
+                    </div>
+                    <button class="btn-submit" type="submit">Entrar no CMS</button>
+                </form>
+            </section>
+            <section class="contact-section">
+                <h2>Criar conta de autor</h2>
+                <p class="account-description">Novos autores enviam matérias para revisão da redação.</p>
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="registerName">Nome</label>
+                        <input class="form-control" id="registerName" name="name" type="text" autocomplete="name" minlength="3" maxlength="100" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerEmail">E-mail</label>
+                        <input class="form-control" id="registerEmail" name="email" type="email" autocomplete="email" maxlength="254" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">Senha (mínimo de 12 caracteres)</label>
+                        <input class="form-control" id="registerPassword" name="password" type="password" autocomplete="new-password" minlength="12" maxlength="128" required>
+                    </div>
+                    <button class="btn-submit" type="submit">Criar conta</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <script src="js/auth.js"></script>
+</body>
+</html>
