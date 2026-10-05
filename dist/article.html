@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Leia as matérias publicadas pelo PHNews.">
+    <title>Notícia | PHNews</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container logo-container">
+            <a href="index.html" class="logo-link">
+                <img src="img/logo-phnews.png" alt="Símbolo do PHNews" class="logo-img">
+            </a>
+        </div>
+        <p class="tagline">Informação com credibilidade, agilidade e compromisso com a verdade.</p>
+    </header>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <ul class="nav-menu"><li class="nav-item"><a class="nav-link" href="index.html">Voltar às notícias</a></li></ul>
+        </div>
+    </nav>
+    <main class="container account-main">
+        <p id="articleNotice" class="form-alert" role="status">Carregando notícia…</p>
+        <article id="articleView" class="article-view contact-section" hidden>
+            <p class="category-badge" id="articleCategory"></p>
+            <h1 id="articleTitle"></h1>
+            <p class="article-summary" id="articleSummary"></p>
+            <p class="card-meta"><span id="articleDate"></span> · <span id="articleByline"></span></p>
+            <img id="articleImage" class="article-image" alt="" hidden>
+            <div class="article-content" id="articleContent"></div>
+            <a id="articleSource" class="read-more" href="" target="_blank" rel="noopener noreferrer" hidden>Acessar a fonte original →</a>
+        </article>
+    </main>
+    <script src="js/auth.js"></script>
+    <script src="js/article.js"></script>
+</body>
+</html>

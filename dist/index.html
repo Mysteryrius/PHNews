@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PHNews - Seu portal de notícias completo com cobertura em Política, Economia, Tecnologia, Esportes e mais.">
+    <title>PHNews - Portal de Notícias Profissional</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+    <!-- Top Bar com data e botão de Modo Escuro -->
+    <div class="top-bar">
+        <div class="container">
+            <span class="date-info" id="currentDate">Domingo, 05 de Outubro de 2026</span>
+            <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Alternar modo escuro">
+                <span id="themeIcon">🌙</span>
+                <span id="themeText">Modo Escuro</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Cabeçalho Principal -->
+    <header class="main-header">
+        <div class="container logo-container">
+            <a href="index.html" class="logo-link">
+                <div class="logo-container">
+                    <img src="img/logo-phnews.png" alt="Símbolo do PHNews" class="logo-img">
+                </div>
+            </a>
+        </div>
+        <p class="tagline">Informação com Credibilidade, Agilidade e Profissionalismo</p>
+    </header>
+
+    <!-- Barra de Navegação Responsiva -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menu de navegação" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Início</a></li>
+                <li class="nav-item"><a href="categorias.html" class="nav-link ">Todas as Categorias</a></li>
+                <li class="nav-item"><a href="politica.html" class="nav-link ">Política</a></li>
+                <li class="nav-item"><a href="economia.html" class="nav-link ">Economia</a></li>
+                <li class="nav-item"><a href="tecnologia.html" class="nav-link ">Tecnologia</a></li>
+                <li class="nav-item"><a href="esportes.html" class="nav-link ">Esportes</a></li>
+                <li class="nav-item"><a href="entretenimento.html" class="nav-link ">Entretenimento</a></li>
+                <li class="nav-item"><a href="saude.html" class="nav-link ">Saúde</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link ">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Banner de identidade visual do PHNews -->
+        <section class="hero-section">
+            <img class="brand-hero-image" src="img/hero-phnews.jpg" alt="">
+            <div class="brand-hero-copy">
+                <h1>A notícia que conecta o Brasil ao mundo.</h1>
+                <p>Informação com credibilidade, agilidade e compromisso com a verdade. Tudo o que você precisa saber, em um só lugar.</p>
+                <a class="brand-hero-link" href="categorias.html">Fique bem informado <span aria-hidden="true">&rarr;</span></a>
+            </div>
+        </section>
+
+        <!-- Seção de Útimas Notícias -->
+        <section>
+            <div class="section-header">
+                <h2 class="section-title">Últimas Notícias do Portal</h2>
+                <a href="categorias.html" class="read-more">Ver Todas as Categorias &rarr;</a>
+            </div>
+
+            <div class="news-grid">
+                <!-- Card 1: Política -->
+                <article class="news-card" data-category="politica">
+                    <div class="card-img-wrapper">
+                        <img src="img/news-politica.svg" alt="Notícia Política">
+                        <span class="category-tag">Política</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">05/10/2026 • Por Redação PHNews</div>
+                        <h3 class="card-title"><a href="politica.html">Aprovação do Projeto de Modernização Digital no Congresso</a></h3>
+                        <p class="card-excerpt">Novas diretrizes promovem a digitalização de serviços públicos e ampliam a transparência nos municípios.</p>
+                        <a href="politica.html" class="read-more">Ler notícia completa &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Card 2: Economia -->
+                <article class="news-card" data-category="economia">
+                    <div class="card-img-wrapper">
+                        <img src="img/news-economia.svg" alt="Notícia Economia">
+                        <span class="category-tag">Economia</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">05/10/2026 • Por Economia &amp; Mercado</div>
+                        <h3 class="card-title"><a href="economia.html">Inflação Recua e Estimula Investimentos na Construção Civil</a></h3>
+                        <p class="card-excerpt">Com a queda das taxas de juros, o setor imobiliário projeta aumento de 15% nas vendas no próximo trimestre.</p>
+                        <a href="economia.html" class="read-more">Ler notícia completa &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Card 3: Tecnologia -->
+                <article class="news-card" data-category="tecnologia">
+                    <div class="card-img-wrapper">
+                        <img src="img/news-tecnologia.svg" alt="Notícia Tecnologia">
+                        <span class="category-tag">Tecnologia</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">05/10/2026 • Por TechLab</div>
+                        <h3 class="card-title"><a href="tecnologia.html">Lançamento de Processadores Quânticos Acessíveis para Empresas</a></h3>
+                        <p class="card-excerpt">Startup apresenta arquitetura quântica capaz de acelerar análises de dados e otimização logística em 100x.</p>
+                        <a href="tecnologia.html" class="read-more">Ler notícia completa &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Card 4: Esportes -->
+                <article class="news-card" data-category="esportes">
+                    <div class="card-img-wrapper">
+                        <img src="img/news-esportes.svg" alt="Notícia Esportes">
+                        <span class="category-tag">Esportes</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">05/10/2026 • Por Esporte Total</div>
+                        <h3 class="card-title"><a href="esportes.html">Seleção Nacional Garante Vaga na Final do Campeonato Mundial</a></h3>
+                        <p class="card-excerpt">Com desempenho brilhante da equipe, o Brasil vence por 3 a 1 e decide o título no próximo domingo.</p>
+                        <a href="esportes.html" class="read-more">Ler notícia completa &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Card 5: Entretenimento -->
+                <article class="news-card" data-category="entretenimento">
+                    <div class="card-img-wrapper">
+                        <img src="img/news-entretenimento.svg" alt="Notícia Entretenimento">
+                        <span class="category-tag">Entretenimento</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">05/10/2026 • Por Arte &amp; Show</div>
+                        <h3 class="card-title"><a href="entretenimento.html">Festival Internacional de Cinema Anuncia Vencedores da Edição 2026</a></h3>
+                        <p class="card-excerpt">Produção independente brasileira conquista o prêmio principal de melhor direção e melhor roteiro original.</p>
+                        <a href="entretenimento.html" class="read-more">Ler notícia completa &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Card 6: Saúde -->
+                <article class="news-card" data-category="saude">
+                    <div class="card-img-wrapper">
+                        <img src="img/news-saude.svg" alt="Notícia Saúde">
+                        <span class="category-tag">Saúde</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">05/10/2026 • Por Vida &amp; Saúde</div>
+                        <h3 class="card-title"><a href="saude.html">Nova Vacina Monovalente Demonstrada com 98% de Eficácia</a></h3>
+                        <p class="card-excerpt">Pesquisadores universitários concluem fases de testes clínicos com resultados promissores para a saúde pública.</p>
+                        <a href="saude.html" class="read-more">Ler notícia completa &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé Principal Semântico -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Sobre o PHNews</h3>
+                    <p style="font-size: 0.9rem; line-height: 1.6;">O PHNews é um portal de notícias dedicado a trazer jornalismo independente, focado na imparcialidade e cobertura abrangente das principais categorias de notícias locais e mundiais.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>10 Categorias</h3>
+                    <ul class="footer-links">
+                        <li><a href="politica.html">1. Política</a></li>
+                        <li><a href="economia.html">2. Economia</a></li>
+                        <li><a href="tecnologia.html">3. Tecnologia</a></li>
+                        <li><a href="esportes.html">4. Esportes</a></li>
+                        <li><a href="entretenimento.html">5. Entretenimento</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Mais Categorias</h3>
+                    <ul class="footer-links">
+                        <li><a href="saude.html">6. Saúde</a></li>
+                        <li><a href="ciencia.html">7. Ciência</a></li>
+                        <li><a href="educacao.html">8. Educação</a></li>
+                        <li><a href="mundo.html">9. Mundo</a></li>
+                        <li><a href="cultura.html">10. Cultura</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento e Contato</h3>
+                    <ul class="footer-links">
+                        <li><a href="contato.html">Fale Conosco / Redação</a></li>
+                        <li><a href="contato.html">Trabalhe Conosco</a></li>
+                        <li><a href="contato.html">Anuncie no Portal</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 PHNews. Todos os direitos reservados. Projeto Web Desenvolvido com HTML, CSS e JavaScript Puro.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript Único Externo -->
+    <script src="js/news.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PHNews - Seu portal de notícias completo com cobertura em Política, Economia, Tecnologia, Esportes e mais.">
+    <title>PHNews - Portal de Notícias Profissional</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+    <!-- Top Bar com data e botão de Modo Escuro -->
+    <div class="top-bar">
+        <div class="container">
+            <span class="date-info" id="currentDate">Domingo, 05 de Outubro de 2026</span>
+            <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Alternar modo escuro">
+                <span id="themeIcon">🌙</span>
+                <span id="themeText">Modo Escuro</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Cabeçalho Principal -->
+    <header class="main-header">
+        <div class="container logo-container">
+            <a href="index.html" class="logo-link">
+                <div class="logo-container">
+                    <img src="img/logo-phnews.png" alt="Símbolo do PHNews" class="logo-img">
+                </div>
+            </a>
+        </div>
+        <p class="tagline">Informação com Credibilidade, Agilidade e Profissionalismo</p>
+    </header>
+
+    <!-- Barra de Navegação Responsiva -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menu de navegação" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link ">Início</a></li>
+                <li class="nav-item"><a href="categorias.html" class="nav-link ">Todas as Categorias</a></li>
+                <li class="nav-item"><a href="politica.html" class="nav-link ">Política</a></li>
+                <li class="nav-item"><a href="economia.html" class="nav-link ">Economia</a></li>
+                <li class="nav-item"><a href="tecnologia.html" class="nav-link ">Tecnologia</a></li>
+                <li class="nav-item"><a href="esportes.html" class="nav-link ">Esportes</a></li>
+                <li class="nav-item"><a href="entretenimento.html" class="nav-link ">Entretenimento</a></li>
+                <li class="nav-item"><a href="saude.html" class="nav-link ">Saúde</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link ">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" style="margin-top: 30px;">
+        <section>
+            <div class="section-header">
+                <h1 class="section-title">Categoria: Mundo</h1>
+                <a href="categorias.html" class="read-more">&larr; Voltar para Todas as Categorias</a>
+            </div>
+            <p style="margin-bottom: 25px; color: var(--text-secondary);">
+                Acompanhe a cobertura completa e atualizada das notícias sobre <strong>Mundo</strong> publicadas pelo portal PHNews.
+            </p>
+
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="card-img-wrapper">
+                        <img src="img/news-mundo.svg" alt="Notícia sobre Mundo">
+                        <span class="category-tag">Mundo</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">05/10/2026 • Editoria de Mundo</div>
+                        <h3 class="card-title">Destaque Exclusivo da Categoria Mundo</h3>
+                        <p class="card-excerpt">Confira os detalhes sobre os principais acontecimentos recentes em Mundo no cenário nacional e internacional.</p>
+                        <a href="#" class="read-more">Ler matéria completa &rarr;</a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="card-img-wrapper">
+                        <img src="img/news-mundo.svg" alt="Análise de Mundo">
+                        <span class="category-tag">Mundo</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">04/10/2026 • Análise PHNews</div>
+                        <h3 class="card-title">Análise Especial: O Futuro do Setor de Mundo</h3>
+                        <p class="card-excerpt">Especialistas discutem as tendências e impactos das novas transformações observadas em Mundo.</p>
+                        <a href="#" class="read-more">Ler matéria completa &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé Principal Semântico -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Sobre o PHNews</h3>
+                    <p style="font-size: 0.9rem; line-height: 1.6;">O PHNews é um portal de notícias dedicado a trazer jornalismo independente, focado na imparcialidade e cobertura abrangente das principais categorias de notícias locais e mundiais.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>10 Categorias</h3>
+                    <ul class="footer-links">
+                        <li><a href="politica.html">1. Política</a></li>
+                        <li><a href="economia.html">2. Economia</a></li>
+                        <li><a href="tecnologia.html">3. Tecnologia</a></li>
+                        <li><a href="esportes.html">4. Esportes</a></li>
+                        <li><a href="entretenimento.html">5. Entretenimento</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Mais Categorias</h3>
+                    <ul class="footer-links">
+                        <li><a href="saude.html">6. Saúde</a></li>
+                        <li><a href="ciencia.html">7. Ciência</a></li>
+                        <li><a href="educacao.html">8. Educação</a></li>
+                        <li><a href="mundo.html">9. Mundo</a></li>
+                        <li><a href="cultura.html">10. Cultura</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Atendimento e Contato</h3>
+                    <ul class="footer-links">
+                        <li><a href="contato.html">Fale Conosco / Redação</a></li>
+                        <li><a href="contato.html">Trabalhe Conosco</a></li>
+                        <li><a href="contato.html">Anuncie no Portal</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 PHNews. Todos os direitos reservados. Projeto Web Desenvolvido com HTML, CSS e JavaScript Puro.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript Único Externo -->
+    <script src="js/news.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
