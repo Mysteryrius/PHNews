@@ -1,0 +1,6 @@
+.env
+node_modules/
+uploads/
+/dist/
+/news.json
+npm-debug.log

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Painel editorial PHNews para envio e revisão de matérias.">
+    <title>Painel editorial | PHNews</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container logo-container">
+            <a href="index.html" class="logo-link">
+                <img src="img/logo-phnews.png" alt="Símbolo do PHNews" class="logo-img">
+            </a>
+        </div>
+        <p class="tagline">Painel de publicação do PHNews</p>
+    </header>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <ul class="nav-menu"><li class="nav-item"><a class="nav-link" href="index.html">Voltar às notícias</a></li></ul>
+        </div>
+    </nav>
+    <main class="container account-main">
+        <section class="section-header">
+            <h1 id="cmsWelcome" class="section-title">Painel editorial</h1>
+            <button class="filter-btn" id="logoutBtn" type="button">Sair</button>
+        </section>
+        <p id="cmsRole" class="account-description"></p>
+        <p id="cmsMessage" class="form-alert" role="status" hidden></p>
+        <section class="contact-section">
+            <h2>Enviar uma notícia para revisão</h2>
+            <form id="articleForm">
+                <div class="form-group">
+                    <label for="articleTitleInput">Título</label>
+                    <input class="form-control" id="articleTitleInput" name="title" type="text" minlength="8" maxlength="180" required>
+                </div>
+                <div class="form-group">
+                    <label for="articleSummaryInput">Resumo</label>
+                    <textarea class="form-control" id="articleSummaryInput" name="summary" minlength="20" maxlength="600" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="articleContentInput">Matéria</label>
+                    <textarea class="form-control" id="articleContentInput" name="content" minlength="40" maxlength="30000" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="articleCategoryInput">Categoria</label>
+                    <select class="form-control" id="articleCategoryInput" name="category" required>
+                        <option value="">Selecione uma categoria</option>
+                        <option>Política</option>
+                        <option>Economia</option>
+                        <option>Tecnologia</option>
+                        <option>Esportes</option>
+                        <option>Entretenimento</option>
+                        <option>Saúde</option>
+                        <option>Ciência</option>
+                        <option>Educação</option>
+                        <option>Mundo</option>
+                        <option>Cultura</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="articleImageInput">Imagem de capa (JPEG ou PNG, até 5 MB)</label>
+                    <input class="form-control" id="articleImageInput" name="image" type="file" accept="image/jpeg,image/png">
+                    <p class="account-description">Escolha uma imagem do seu dispositivo. A imagem atual será mantida se você não selecionar outra.</p>
+                    <div id="removeImageField" hidden>
+                        <img class="cms-image-preview" id="articleImagePreview" alt="Pré-visualização da imagem de capa" hidden>
+                        <label class="image-remove-option">
+                            <input id="removeArticleImage" name="removeImage" type="checkbox" value="true">
+                            Remover a imagem de capa atual
+                        </label>
+                    </div>
+                    <img class="cms-image-preview" id="selectedArticleImagePreview" alt="Pré-visualização da imagem selecionada" hidden>
+                </div>
+                <div class="cms-article-actions">
+                    <button class="btn-submit" id="articleSubmit" type="submit">Enviar para revisão</button>
+                    <button class="filter-btn" id="cancelEditBtn" type="button" hidden>Cancelar edição</button>
+                </div>
+            </form>
+        </section>
+        <section class="cms-list-section">
+            <h2 id="myArticlesHeading">Minhas matérias</h2>
+            <div id="myArticles" class="cms-article-list"></div>
+            <button class="filter-btn cms-load-more" id="loadMoreArticlesBtn" type="button" hidden>Carregar mais matérias</button>
+        </section>
+        <section class="cms-list-section" id="reviewSection" hidden>
+            <h2>Fila de revisão editorial</h2>
+            <div id="reviewQueue" class="cms-article-list"></div>
+        </section>
+    </main>
+    <script src="js/auth.js"></script>
+    <script src="js/cms.js"></script>
+</body>
+</html>

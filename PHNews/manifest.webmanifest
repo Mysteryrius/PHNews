@@ -1,0 +1,18 @@
+{
+  "name": "PHNews — notícias do Brasil e do mundo",
+  "short_name": "PHNews",
+  "description": "Leia as notícias mais recentes das dez editorias do PHNews, mesmo quando estiver sem conexão.",
+  "lang": "pt-BR",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3f5f8",
+  "theme_color": "#10223d",
+  "icons": [
+    {
+      "src": "img/logo-phnews.png",
+      "sizes": "768x768",
+      "type": "image/png"
+    }
+  ]
+}
